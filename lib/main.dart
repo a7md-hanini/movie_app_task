@@ -20,6 +20,7 @@ Future<void> main() async {
   SPDB.shPref = await SharedPreferences.getInstance();
   Bloc.observer = MyBlocObserver();
   MyPackage.getInfo();
+
   await dioClient.initcert();
 
   runApp(
